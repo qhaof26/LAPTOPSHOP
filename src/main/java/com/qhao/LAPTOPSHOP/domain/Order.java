@@ -31,6 +31,9 @@ public class Order {
         return id;
     }
 
+    public Order() {
+    }
+
     public Order(long id, double totalPrice) {
         this.id = id;
         this.totalPrice = totalPrice;

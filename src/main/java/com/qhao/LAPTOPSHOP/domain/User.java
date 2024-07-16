@@ -34,15 +34,7 @@ public class User {
     public User() {
     }
 
-    public User(long id, String email, String password, String fullName, String phone, String address, String avatar) {
-        this.id = id;
-        this.email = email;
-        this.password = password;
-        this.fullName = fullName;
-        this.phone = phone;
-        this.address = address;
-        this.avatar = avatar;
-    }
+    // constructor
 
     public long getId() {
         return id;
@@ -100,10 +92,26 @@ public class User {
         this.avatar = avatar;
     }
 
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    public List<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
+    }
+
     @Override
     public String toString() {
         return "User [id=" + id + ", email=" + email + ", password=" + password + ", fullName=" + fullName + ", phone="
-                + phone + ", address=" + address + ", avatar=" + avatar + "]";
+                + phone + ", address=" + address + ", avatar=" + avatar + ", role=" + role + ", orders=" + orders + "]";
     }
 
 }

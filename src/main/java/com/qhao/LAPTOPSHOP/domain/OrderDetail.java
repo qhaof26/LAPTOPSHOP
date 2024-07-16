@@ -65,14 +65,6 @@ public class OrderDetail {
         this.product = product;
     }
 
-    public OrderDetail(long id, long quantity, double price, Order order, Product product) {
-        this.id = id;
-        this.quantity = quantity;
-        this.price = price;
-        this.order = order;
-        this.product = product;
-    }
-
     @Override
     public String toString() {
         return "OrderDetail [id=" + id + ", quantity=" + quantity + ", price=" + price + ", order=" + order
